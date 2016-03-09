@@ -1,0 +1,185 @@
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates|Carrois+Gothic|Montserrat|Archivo+Narrow:400,700|Carrois+Gothic+SC);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,latin-ext);
+@font-face {
+    font-family: 'Frutiger55Roman';
+    src: url('fonts/frutiger_ce_55_roman-webfont.eot');
+    src: url('fonts/frutiger_ce_55_roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/frutiger_ce_55_roman-webfont.woff') format('woff'),
+         url('fonts/frutiger_ce_55_roman-webfont.ttf') format('truetype'),
+         url('fonts/frutiger_ce_55_roman-webfont.svg#Frutiger55Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @font-face {
+	 font-family: 'Puritan20Italic';
+	 src: 	url('fonts/puritan_italic-webfont.eot?') format('eot'),
+	 		url('fonts/puritan_italic-webfont.woff') format('woff'),  
+	 		url('fonts/puritan_italic-webfont.ttf') format('truetype'),  
+	 		url('fonts/puritan_italic-webfont.svg#webfontZMWmRIPG') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+ @font-face {
+	 font-family: 'Puritan20Normal';
+	 src: 	url('fonts/puritan_regular-webfont.eot?') format('eot'),  
+	 		url('fonts/puritan_regular-webfont.woff') format('woff'),  
+	 		url('fonts/puritan_regular-webfont.ttf') format('truetype'),  
+	 		url('fonts/puritan_regular-webfont.svg#webfontJ25dHiGv') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+.Bold			{font-weight:bold;}
+
+/* Frutiger */
+
+.Frutiger10px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:10px;}
+.Frutiger11px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:11px;}
+.Frutiger12px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:12px;}
+.Frutiger13px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:13px;}
+.Frutiger14px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:14px;}
+.Frutiger15px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:15px;}
+.Frutiger16px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:16px;}
+.Frutiger17px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:17px;}
+.Frutiger18px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:18px;}
+.Frutiger19px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:19px;}
+.Frutiger20px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:20px;}
+.Frutiger21px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:21px;}
+.Frutiger22px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:22px;}
+.Frutiger23px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:23px;}
+.Frutiger24px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:24px;}
+.Frutiger25px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:25px;}
+.Frutiger30px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:30px;}
+.Frutiger50px {font-family    : 'Frutiger55Roman', Arial, Helvetica, sans-serif; font-size:50px;}
+
+/* Puritan */
+
+.Puritan10px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:10px;}
+.Puritan11px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:11px;}
+.Puritan12px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:12px;}
+.Puritan13px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:13px;}
+.Puritan14px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:14px;}
+.Puritan15px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:15px;}
+.Puritan16px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:16px;}
+.Puritan17px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:17px;}
+.Puritan18px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:18px;}
+.Puritan19px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:19px;}
+.Puritan20px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:20px;}
+.Puritan21px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:21px;}
+.Puritan22px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:22px;}
+.Puritan23px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:23px;}
+.Puritan24px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:24px;}
+.Puritan25px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:25px;}
+.Puritan50px {font-family    : 'Puritan20Normal', Arial, Helvetica, sans-serif; font-size:50px;}
+
+/* Georgia */
+
+.Georgia10px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:10px;}
+.Georgia11px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:11px;}
+.Georgia12px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:12px;}
+.Georgia13px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:13px;}
+.Georgia14px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:14px;}
+.Georgia15px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:15px;}
+.Georgia16px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:16px;}
+.Georgia17px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:17px;}
+.Georgia18px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:18px;}
+.Georgia19px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:19px;}
+.Georgia20px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:20px;}
+.Georgia21px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:21px;}
+.Georgia22px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:22px;}
+.Georgia23px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:23px;}
+.Georgia24px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:24px;}
+.Georgia25px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:25px;}
+.Georgia50px {font-family    : 'Georgia', Arial, Helvetica, sans-serif; font-size:50px;}
+
+/* Press Start P2 */
+
+.PressStartP210px {font-family:'Press Start 2P',Arial; font-size:10px;}
+.PressStartP211px {font-family:'Press Start 2P',Arial; font-size:11px;}
+.PressStartP212px {font-family:'Press Start 2P',Arial; font-size:12px;}
+.PressStartP213px {font-family:'Press Start 2P',Arial; font-size:13px;}
+.PressStartP214px {font-family:'Press Start 2P',Arial; font-size:14px;}
+.PressStartP215px {font-family:'Press Start 2P',Arial; font-size:15px;}
+.PressStartP216px {font-family:'Press Start 2P',Arial; font-size:16px;}
+.PressStartP217px {font-family:'Press Start 2P',Arial; font-size:17px;}
+.PressStartP218px {font-family:'Press Start 2P',Arial; font-size:18px;}
+.PressStartP219px {font-family:'Press Start 2P',Arial; font-size:19px;}
+.PressStartP220px {font-family:'Press Start 2P',Arial; font-size:20px;}
+
+/* Arial */
+
+.Arial10px {font-family       :Arial; font-size:10px;}
+.Arial11px {font-family       :Arial; font-size:11px;}
+.Arial12px {font-family       :Arial; font-size:12px;}
+.Arial13px {font-family       :Arial; font-size:13px;}
+.Arial14px {font-family       :Arial; font-size:14px;}
+.Arial15px {font-family       :Arial; font-size:15px;}
+.Arial16px {font-family       :Arial; font-size:16px;}
+.Arial17px {font-family       :Arial; font-size:17px;}
+.Arial18px {font-family       :Arial; font-size:18px;}
+.Arial19px {font-family       :Arial; font-size:19px;}
+.Arial20px {font-family       :Arial; font-size:20px;}
+.Arial28px {font-family       :Arial; font-size:28px;}
+.Arial30px {font-family       :Arial; font-size:30px;}
+.Arial54px {font-family       :Arial; font-size:54px;}
+
+/* Verdana */
+
+.Verdana10px {font-family       :Verdana; font-size:10px;}
+.Verdana11px {font-family       :Verdana; font-size:11px;}
+.Verdana12px {font-family       :Verdana; font-size:12px;}
+.Verdana13px {font-family       :Verdana; font-size:13px;}
+.Verdana14px {font-family       :Verdana; font-size:14px;}
+.Verdana15px {font-family       :Verdana; font-size:15px;}
+.Verdana16px {font-family       :Verdana; font-size:16px;}
+.Verdana17px {font-family       :Verdana; font-size:17px;}
+.Verdana18px {font-family       :Verdana; font-size:18px;}
+.Verdana19px {font-family       :Verdana; font-size:19px;}
+.Verdana20px {font-family       :Verdana; font-size:20px;}
+.Verdana21px {font-family       :Verdana; font-size:21px;}
+.Verdana22px {font-family       :Verdana; font-size:22px;}
+.Verdana23px {font-family       :Verdana; font-size:23px;}
+.Verdana24px {font-family       :Verdana; font-size:24px;}
+.Verdana25px {font-family       :Verdana; font-size:25px;}
+.Verdana28px {font-family       :Verdana; font-size:28px;}
+.Verdana30px {font-family       :Verdana; font-size:30px;}
+.Verdana50px {font-family       :Verdana; font-size:50px;}
+.Verdana54px {font-family       :Verdana; font-size:54px;}
+
+/* Montserrat */
+
+.Montserrat10px	{font-family  :'Montserrat',Arial; font-size:10px;}
+.Montserrat11px	{font-family  :'Montserrat',Arial; font-size:11px;}
+.Montserrat12px	{font-family  :'Montserrat',Arial; font-size:12px;}
+.Montserrat13px	{font-family  :'Montserrat',Arial; font-size:13px;}
+.Montserrat14px	{font-family  :'Montserrat',Arial; font-size:14px;}
+.Montserrat15px	{font-family  :'Montserrat',Arial; font-size:15px;}
+.Montserrat16px	{font-family  :'Montserrat',Arial; font-size:16px;}
+.Montserrat17px	{font-family  :'Montserrat',Arial; font-size:17px;}
+.Montserrat18px	{font-family  :'Montserrat',Arial; font-size:18px;}
+.Montserrat19px	{font-family  :'Montserrat',Arial; font-size:19px;}
+.Montserrat20px	{font-family  :'Montserrat',Arial; font-size:20px;}
+.Montserrat26px	{font-family  :'Montserrat',Arial; font-size:26px;}
+.Montserrat28px	{font-family  :'Montserrat',Arial; font-size:28px;}
+.Montserrat50px	{font-family  :'Montserrat',Arial; font-size:50px;}
+.Montserrat52px	{font-family  :'Montserrat',Arial; font-size:52px;}
+
+/* Noto */
+
+.Noto10px {font-family        :'Noto Sans',Arial; font-size:10px;}
+.Noto11px {font-family        :'Noto Sans',Arial; font-size:11px;}
+.Noto12px {font-family        :'Noto Sans',Arial; font-size:12px;}
+.Noto13px {font-family        :'Noto Sans',Arial; font-size:13px;}
+.Noto14px {font-family        :'Noto Sans',Arial; font-size:14px;}
+.Noto15px {font-family        :'Noto Sans',Arial; font-size:15px;}
+.Noto16px {font-family        :'Noto Sans',Arial; font-size:16px;}
+.Noto17px {font-family        :'Noto Sans',Arial; font-size:17px;}
+.Noto18px {font-family        :'Noto Sans',Arial; font-size:18px;}
+.Noto19px {font-family        :'Noto Sans',Arial; font-size:19px;}
+.Noto20px {font-family        :'Noto Sans',Arial; font-size:20px;}
+.Noto26px {font-family        :'Noto Sans',Arial; font-size:26px;}
+.Noto28px {font-family        :'Noto Sans',Arial; font-size:28px;}
+.Noto50px {font-family        :'Noto Sans',Arial; font-size:50px;}
+.Noto52px {font-family        :'Noto Sans',Arial; font-size:52px;}

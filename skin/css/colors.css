@@ -1,0 +1,30 @@
+/* CSS Document */
+
+/* RED */
+.Red		{color:#F00;}
+.AlterRed	{color:#C62525;}
+.DarkRed	{color:#931212;}
+.DarkestRed {color:#4E1313;}
+.LightRed	{color:#d42f2f;}
+
+/* GRAY */
+.Gray		{color:#999;}
+.BlackGray	{color:#646464;}
+.DarkGray	{color:#333;}
+.LightGray	{color:#CCC;}
+
+/* WHITE */
+.White		{color:#FFF;}
+
+/* BLUE */
+.Blue 		{color:#0101DF;}
+
+/* BLACK */
+.Black		{color:#000;}
+.DarkBlue 	{color:#0B2161;}
+
+/* CYAN */
+.BlueCyan	{color:#1b9acd;}
+
+/* GREEN */
+.Green		{color:#31982B;}
