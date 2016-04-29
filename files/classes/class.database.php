@@ -4,7 +4,7 @@ class DataBase
 {
 
 	var $UserDB		= 'root';
-	var $PasswordDB	= '';
+	var $PasswordDB	= 'root';
 	var $DataBase	= 'amha';
 	var $ServerDB	= 'localhost';
 	var $TypeDB 	= 'Mysql';
@@ -18,7 +18,7 @@ class DataBase
 	
 	
 
-	public function __construct($UserDB='root', $PasswordDB='', $DataBase='amha', $ServerDB='localhost',$TypeDB='Mysql'){
+	public function __construct($UserDB='root', $PasswordDB='root', $DataBase='amha', $ServerDB='localhost',$TypeDB='Mysql'){
 		$this->UserDB 		= $UserDB;
 		$this->PasswordDB	= $PasswordDB;
 		$this->DataBase		= $DataBase;

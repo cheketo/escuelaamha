@@ -8,7 +8,7 @@
 	<?php include("../../includes/inc.top.php"); ?>
 	<div id="Content">
 		<div class="Center resize"><img src="../../../skin/images/body/logos/campus_logo3.png" width="200" height="189" /></div>
-		<div class="LightGray" style="font-style:italic;font-family: 'sans-serif'!important;font-size:20px;width:60%;margin:0 auto;color:#D8B4BD!important;">
+		<div class="DarkBlue" style="font-style:italic;font-family: 'sans-serif'!important;font-size:20px;width:60%;margin:0 auto;">
 			<p style="text-align: left;">Estimados alumnos y socios:</p>
 			<p style="text-align: justify;">Comenzamos un nuevo a&ntilde;o con energ&iacute;a renovada y muchas ganas de compartir con todos ustedes el estudio de la homeopat&iacute;a.  El Campus Virtual de la Escuela de Posgrado de la Asociaci&oacute;n M&eacute;dica Homeop&aacute;tica Argentina, est&aacute; pensado para unir en el conocimiento a todos los miembros de nuestra gran familia.</p>
 			<p style="text-align: justify;">La idea no es tener lectores pasivos, sino que cada uno de nosotros pueda colaborar en el desarrollo y mejoramiento de este sitio, recomendando cursos, congresos y seminarios, art&iacute;culos cl&iacute;nicos y de investigaci&oacute;n, compartiendo libros y documentales y sugiriendo todo lo que pueda enriquecer el mutuo intercambio, tan importante para la evoluci&oacute;n individual del home&oacute;pata y de la homeopat&iacute;a en general. </p>

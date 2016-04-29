@@ -13,6 +13,7 @@
         Odontoestomatolog&iacute;a, Farmacia y Graduados. A&uacute;n no se conform&oacute; el Foro de Veterinaria.</p>
         <p>Los siguientes docentes est&aacute;n a cargo de:<br>
         1&deg; a&ntilde;o: Dra. Astrid Motura<br>
+        1&deg; a&ntilde;o (Mar del Plata): Dra. Silvia Mercado<br>
         2&deg; a&ntilde;o: Dra. Elena Figari<br>
         3&deg; a&ntilde;o: Dr. Adolfo Campanelli<br>
         Graduados: Dra. M&oacute;nica Prunell<br>
