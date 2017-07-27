@@ -27,7 +27,7 @@ switch($_POST['action'])
 		if(count($DB->fetchAssoc('select','admin_profile','profile_id,title',"profile_id = ".$_POST['id']))>0)
 		{
 			$Profiles = new ProfileData();
-			echo utf8_encode($Profiles->MakeList($_POST['id'])); 
+			echo $Profiles->MakeList($_POST['id']); 
 		}
 	break;
 	

@@ -43,7 +43,7 @@ switch(strtolower($_POST['action']))
 		   	$Menu = new Menu();
 		    $Pager = $_SESSION[$_POST['pagerid']];
 		    $Pager->SetActualPage($Page);
-		    echo utf8_encode($Menu->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere()));
+		    echo $Menu->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere());
 		    $_SESSION[$_POST['pagerid']] = $Pager;
 	   	}
 	   	die;

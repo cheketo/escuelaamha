@@ -324,7 +324,7 @@ switch(strtolower($_POST['action']))
 		    $Pager = $_SESSION[$_POST['pagerid']];
 		    $Pager->SetActualPage($Page);
 		    if($Admin->ProfileID>2) $Where = " AND section_id IN (SELECT section_id FROM relation_section_admin WHERE admin_id = ".$Admin->AdminID.")";
-		    echo utf8_encode($Article->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere().$Where));
+		    echo $Article->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere().$Where);
 		    $_SESSION[$_POST['pagerid']] = $Pager;
 	   	}
 	   	die;

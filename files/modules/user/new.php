@@ -15,7 +15,7 @@
     
     	<div class="FormWrapper">        
         	<form name="frm" id="frm" method="post" action="process.abm.php" enctype="multipart/form-data">
-            <div class="ListTop BorderRadiusTop Noto14px">Nuevo Usuario Administrador</div>
+            <div class="ListTop BorderRadiusTop Noto14px">Nuevo Usuario</div>
             <div class="ListBody Noto12px">
                 <?php echo insertElement("hidden","action","insert"); ?>
                 <div class="ListInnerOptions Center">

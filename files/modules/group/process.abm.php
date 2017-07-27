@@ -69,8 +69,8 @@ switch(strtolower($_POST['action']))
 
 	///////////////////////////////////// VALIDATIONS /////////////////////////////////////////////////
 	case 'validate':
-		$Name 			= strtolower(utf8_encode($_POST['name']));
-		$ActualName 	= strtolower(utf8_encode($_POST['actualname']));
+		$Name 			= strtolower($_POST['name']);
+		$ActualName 	= strtolower($_POST['actualname']);
 
 	    if($ActualName)
 	    	$TotalRegs  = $DB->numRows('select','admin_group','*',"name = '".$Name."' AND name <> '".$ActualName."'");
@@ -88,7 +88,7 @@ switch(strtolower($_POST['action']))
 		   
 		    $Pager = $_SESSION[$_POST['pagerid']];
 		    $Pager->SetActualPage($Page);
-		    echo utf8_encode($Group->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere()));
+		    echo $Group->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere());
 		    $_SESSION[$_POST['pagerid']] = $Pager;
 	   	}
 	   	die;

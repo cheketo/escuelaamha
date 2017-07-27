@@ -22,7 +22,7 @@
 	<div id="Content">
     
     	<div class="ListWrapper">        
-            <div class="ListTop BorderRadiusTop Noto14px">Listado de Usuarios Administradores</div>
+            <div class="ListTop BorderRadiusTop Noto14px">Listado de Usuarios</div>
             <div class="ListOptions Center">
                 <?php 
                     echo insertElement('button','ButtonNew','NUEVO USUARIO','SubmitButton Center Arial14px BlackGray Bold','');

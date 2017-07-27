@@ -113,8 +113,8 @@ switch(strtolower($_POST['action']))
 
 	///////////////////////////////////// VALIDATIONS /////////////////////////////////////////////////
 	case 'validate':
-		$User 			= strtolower(utf8_encode($_POST['user']));
-		$ActualUser 	= strtolower(utf8_encode($_POST['actualuser']));
+		$User 			= strtolower($_POST['user']);
+		$ActualUser 	= strtolower($_POST['actualuser']);
 
 	    if($ActualUser)
 	    	$TotalRegs  = $DB->numRows('select','admin_user','*',"user = '".$User."' AND user<> '".$ActualUser."'");
@@ -146,9 +146,9 @@ switch(strtolower($_POST['action']))
 		    $Pager = $_SESSION[$_POST['pagerid']];
 		    $Pager->SetActualPage($Page);
 		    if($_SESSION['inactive_status'])
-		    	echo utf8_encode($Admin->MakeListInactive($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere()));
+		    	echo $Admin->MakeListInactive($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere());
 		    else
-		    	echo utf8_encode($Admin->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere()));
+		    	echo $Admin->MakeList($Pager->CalculateRegFrom(),$Pager->GetPageRegs(),$Pager->GetWhere());
 		    $_SESSION[$_POST['pagerid']] = $Pager;
 	   	}
 	   	die;

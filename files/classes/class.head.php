@@ -4,15 +4,15 @@ class Head
 {
 	var $Title;
 	//var $HTML		= '<html xmlns="http://www.w3.org/1999/xhtml">';
-var $HTML		= '<html>';
+	var $HTML		= '<html>';
 	//var $DocType	= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
-var $DocType	= '<!DOCTYPE>';
+	var $DocType	= '<!DOCTYPE html>';
 	var $Link		= array();
 	var $Script		= array();
 	var $Meta		= array();
 	var $Favicon	= '';
 	//var $Charset	= "iso-8859-1";
-var $Charset	= "UTF-8";
+	var $Charset	= "UTF-8";
 	
 	function __construct()
 	{
@@ -34,8 +34,7 @@ var $Charset	= "UTF-8";
 		echo $this->HTML;
 		echo "<head>";
 		//echo '<meta http-equiv="Content-Type" content="application/xhtml+xml; charset='.$this->Charset.'">';
-                
-                echo '<meta http-equiv="Content-Type" content="text/html;charset='.$this->Charset.'">';
+        echo '<meta http-equiv="Content-Type" content="text/html;charset='.$this->Charset.'">';
 
 
     	echo '<meta charset="'.$this->Charset.'" >';

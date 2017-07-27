@@ -19,7 +19,7 @@
     <div id="Content">
 		<div class="FormWrapper">        
         	<form name="frm" id="frm" method="post" action="process.abm.php" enctype="multipart/form-data">
-            <div class="ListTop BorderRadiusTop Noto14px">Editar Usuario Administrador</div>
+            <div class="ListTop BorderRadiusTop Noto14px">Editar Usuario</div>
             <div class="ListBody Noto12px">
                 <?php echo insertElement("hidden","action","update"); ?>
                 <?php echo insertElement("hidden","admin_id",$Admin_id); ?>
