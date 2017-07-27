@@ -4,7 +4,8 @@
 	$ArticleID 	= $_GET['id'];
 	$Article 	= new Article($ArticleID);
 	$Data		= $Article->GetData();
-	if(!$ArticleID || !$Admin->ProfileID<10){header("location:../principal/main.php");die;}
+	
+	if(!$ArticleID || !($Admin->ProfileID<10)){header("location:../principal/main.php");die;}
 	
     $Files = $Article->GetFiles();
 	$Head->setTitle($Data['title']);

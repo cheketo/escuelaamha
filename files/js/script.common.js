@@ -174,10 +174,9 @@ $(function(){
 	});
 
 	function listActions(action,id,process,target)
-	{
-		
+	{	
 		switch(action){
-			case "view": 	window.location.href = target + "?id="+id; break;
+			case "view": 	window.location.href = target; break;
 			case "edit": 	window.location.href = target + "?id="+id; break;
 			case "delete": 	
 				alertify.confirm(utf8_decode("¿Desea eliminar este registro?"), function(e){

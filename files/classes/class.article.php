@@ -189,7 +189,7 @@ class Article extends DataBase
 	{	
 
 		$Limit = $From>=0 && $To>=0 ? $From.",".$To : "";
-		$Articles	= $this->fetchAssoc('select','article','*',$this->Where.$Where,"title",$Limit); 
+		$Articles	= $this->fetchAssoc('select','article','*',$this->Where.$Where,"creation_date DESC",$Limit); 
 
 		$AtLeastOne	= false;
 		$this->SetProfiles();
@@ -197,7 +197,7 @@ class Article extends DataBase
 		{
 			$Article	=	new Article($Articles[$i]['article_id']);
 			
-			$Actions	= 	'<img src="../../../skin/images/body/icons/magnifier.png" action="view" target="article_preview.php?id='.$Article->Data['article_id'].'" />';
+			$Actions	= 	'<img src="../../../skin/images/body/icons/magnifier.png" action="view" target="article_preview.php?id='.$Article->Data['article_id'].'" id="article_'.$Article->Data['article_id'].'" />';
 			$Actions	.= 	'<img src="../../../skin/images/body/icons/pencil.png" action="edit" class="actionImg" target="edit.php" id="article_'.$Article->Data['article_id'].'" />';
 			$Actions	.= 	'<img src="../../../skin/images/body/icons/cross.png" action="delete" class="actionImg" process="process.abm.php" id="article_'.$Article->Data['article_id'].'" />';
 			

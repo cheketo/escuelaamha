@@ -170,7 +170,7 @@ class Section extends DataBase
 			$Section	=	new Section($Sections[$i]['section_id']);
 			
 			//$Actions	= 	'<img src="../../../skin/images/body/icons/mini_article.png" action="article" target="../article/list.php?id='.$Section->Data['section_id'].'" id="seccion_'.$Section->Data['section_id'].'" />';
-			$Actions	= 	'<img src="../../../skin/images/body/icons/magnifier.png" action="view" target="section.php?id='.$Section->Data['section_id'].'" />';
+			$Actions	= 	'<img src="../../../skin/images/body/icons/magnifier.png" action="view" class="actionImg" target="section.php?id='.$Section->Data['section_id'].'" id="seccion_'.$Section->Data['section_id'].'" />';
 			$Actions	.= 	'<img src="../../../skin/images/body/icons/pencil.png" action="edit" class="actionImg" target="edit.php" id="seccion_'.$Section->Data['section_id'].'" />';
 			$Actions	.= 	'<img src="../../../skin/images/body/icons/cross.png" action="delete" class="actionImg" process="process.abm.php" id="seccion_'.$Section->Data['section_id'].'" />';
 			
