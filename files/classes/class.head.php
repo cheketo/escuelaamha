@@ -3,13 +3,16 @@
 class Head
 {
 	var $Title;
-	var $HTML		= '<html xmlns="http://www.w3.org/1999/xhtml">';
-	var $DocType	= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
+	//var $HTML		= '<html xmlns="http://www.w3.org/1999/xhtml">';
+var $HTML		= '<html>';
+	//var $DocType	= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
+var $DocType	= '<!DOCTYPE>';
 	var $Link		= array();
 	var $Script		= array();
 	var $Meta		= array();
 	var $Favicon	= '';
-	var $Charset	= "iso-8859-1";
+	//var $Charset	= "iso-8859-1";
+var $Charset	= "UTF-8";
 	
 	function __construct()
 	{
@@ -30,7 +33,11 @@ class Head
 		echo $this->DocType;
 		echo $this->HTML;
 		echo "<head>";
-		echo '<meta http-equiv="Content-Type" content="application/xhtml+xml; charset='.$this->Charset.'">';
+		//echo '<meta http-equiv="Content-Type" content="application/xhtml+xml; charset='.$this->Charset.'">';
+                
+                echo '<meta http-equiv="Content-Type" content="text/html;charset='.$this->Charset.'">';
+
+
     	echo '<meta charset="'.$this->Charset.'" >';
 		include("../../includes/inc.head.php");
 		echo $this->Title;

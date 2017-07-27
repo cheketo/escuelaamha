@@ -175,22 +175,15 @@ switch(strtolower($_POST['action']))
 		$Article	= $_POST['article'];
 		$Parent		= $_POST['parentid'];
 		$Author		= $Admin->AdminID;
-		$AuthorData = $DB->fetchAssoc("select","admin_user","*","admin_id=".$Author);
 		$Values		= "'".$Message."',".$Article.",".$Author.",".$Parent.",NOW()";
 		$DB->execQuery('insert','comment','message,article_id,author_id,parent_id,creation_date',$Values);
 		$CommentID 	= $DB->GetInsertId();
 		$Comment 	= $DB->fetchAssoc("select","comment","*","comment_id = ".$CommentID);
 		$Data 		= $DB->fetchAssoc("select","article","*","article_id = ".$Article);
 		$Reply 		= $Parent>0 || $Data[0]['reply']=='N'? "" : ' - <div class="BlueCyan reply'.$CommentID.'" style="display:inline-block;cursor:pointer;" comment="'.$CommentID.'">Responder</div>';
-		$Alert = new AlertData();
-		$Alert->InsertAlert($Data[0]['author_id'],'Nuevo Comentario',$AuthorData[0]['first_name'].' '.$AuthorData[0]['last_name'].' hizo un comentario en el artículo '.$Data[0]['title'],'../article/article.php?id='.$Article);
 
 		$Style  = $Parent >0? '': ' style="border-bottom:1px dashed #666;padding-bottom:10px;"';
 
-		if($Parent >0){
-			$ParentData = $DB->fetchAssoc("select","comment","*","comment_id = ".$Parent);
-			$Alert->InsertAlert($ParentData[0]['author_id'],'Respondieron un comentario tuyo',$Admin->FullName.' respondió un comentario tuyo en el artículo '.$Data[0]['title'],'../article/article.php?id='.$Article);	
-		}
 
 		$HTML = '<div class="CommentContent" '.$Style.'>
                 <div class="Left CommentImg Center">

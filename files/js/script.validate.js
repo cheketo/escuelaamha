@@ -34,8 +34,8 @@ VALIDATION ATRIBUTES:
 
 8)	mustBeChecked: Checks if a number of checkboxes are checked.
 	Declaration: 'mustBeChecked="1/At least 1 of the checkboxes must be checked"'
-	Declaration: 'mustBeChecked="3/Only 3 of the checkboxes can be checked/limited"'
-	Declaration: 'mustBeChecked="2/Only 2 of the checkboxes can be checked/strict"'
+	Declaration: 'mustBeChecked="3/Only 3 of the checkboxes can be checked/limit"'
+	Declaration: 'mustBeChecked="2/Only 3 of the checkboxes can be checked/strict"'
 	Data: Value/Text/(Mode)
 
 
@@ -298,7 +298,7 @@ VALIDATION ATRIBUTES:
 					return checked!=checks;
 				break;
 
-				case 'limited':
+				case 'limit':
 					return checked>checks;
 				break;
 

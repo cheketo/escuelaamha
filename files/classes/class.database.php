@@ -3,9 +3,9 @@
 class DataBase
 {
 
-	var $UserDB		= 'root';
-	var $PasswordDB	= 'root';
-	var $DataBase	= 'amha';
+	var $UserDB		= 'b6000579';
+	var $PasswordDB	= 'makoWO55pi';
+	var $DataBase	= 'b6000579_amha';
 	var $ServerDB	= 'localhost';
 	var $TypeDB 	= 'Mysql';
 	var $SchemaDB	= 'testing,public';
@@ -18,7 +18,7 @@ class DataBase
 	
 	
 
-	public function __construct($UserDB='root', $PasswordDB='root', $DataBase='amha', $ServerDB='localhost',$TypeDB='Mysql'){
+	public function __construct($UserDB='b6000579', $PasswordDB='makoWO55pi', $DataBase='b6000579_amha', $ServerDB='localhost',$TypeDB='Mysql'){
 		$this->UserDB 		= $UserDB;
 		$this->PasswordDB	= $PasswordDB;
 		$this->DataBase		= $DataBase;
@@ -63,7 +63,7 @@ class DataBase
 		switch($this->TypeDB)
 		{
 			case "Mysql":
-				return mysqli_error($this->StreamConnection);
+				return mysqli_error();
 			break;
 			case "Postgress":
 				return pg_last_error();
@@ -141,7 +141,7 @@ class DataBase
 		switch($this->TypeDB)
 		{
 			case "Mysql":
-				$Query = mysqli_query($this->StreamConnection,$Query) or mysqli_error($this->StreamConnection);
+				$Query = mysqli_query($this->StreamConnection,$Query) or mysqli_error();
 				$Data	= array();
 				while($Data[]=mysqli_fetch_assoc($Query)){}
 				array_pop($Data);
@@ -156,7 +156,7 @@ class DataBase
 		switch($this->TypeDB)
 		{
 			case "Mysql":
-				$Query = mysqli_query($this->StreamConnection,$Query) or mysqli_error($this->StreamConnection);
+				$Query = mysqli_query($this->StreamConnection,$Query) or mysqli_error();
 				if(!$Result) $this->Error = mysqli_error($this->StreamConnection);
 				while($Data[]=mysqli_fetch_row($Query)){}
 				array_pop($Data);
@@ -234,7 +234,7 @@ class DataBase
 				$Where	= $Where ? ' WHERE '.$Where : '';
 				$Order	= $Order ? ' ORDER BY '.$Order : '';
 				$Limit	= $Limit ? ' LIMIT '.$Limit : '';
-				return 'SELECT '.$Fields.' FROM '.$Table.$Where.$Order.$Limit;
+				return "SELECT ".$Fields." FROM ".$Table.$Where.$Order.$Limit;
 			break;
 		}
 	}
@@ -244,7 +244,7 @@ class DataBase
 		switch($this->TypeDB)
 		{
 			case "Mysql":
-				return 'INSERT INTO '.$Table.' ('.$Fields.')VALUES('.$Values.')';
+				return "INSERT INTO ".$Table." (".$Fields.")VALUES(".$Values.")";
 			break;
 		}
 	}
@@ -255,7 +255,7 @@ class DataBase
 		{
 			case "Mysql":
 				$Where	= $Where ? ' WHERE '.$Where : '';
-				return 'UPDATE '.$Table.' SET '.$Values.$Where;
+				return "UPDATE ".$Table." SET ".$Values.$Where;
 			break;
 		}
 	}
@@ -266,7 +266,7 @@ class DataBase
 		{
 			case "Mysql":
 				$Where	= $Where ? ' WHERE '.$Where : '';
-				return 'DELETE FROM '.$Table.$Where;
+				return "DELETE FROM ".$Table.$Where;
 			break;
 		}
 	}
@@ -276,7 +276,7 @@ class DataBase
 		switch($this->TypeDB)
 		{
 			case "Mysql":
-				return 'DESCRIBE '.$Table;
+				return "DESCRIBE ".$Table;
 			break;
 		}
 	}

@@ -42,7 +42,7 @@ class AdminData extends DataBase
 	{	
 
 		$Limit = $From>=0 && $To>=0 ? $From.",".$To : "";
-		$AdminRegs	= $this->fetchAssoc('select','admin_user','*',"status = 'A' AND profile_id > ".$this->ProfileID." ".$Where,"first_name",$Limit); 
+		$AdminRegs	= $this->fetchAssoc('select','admin_user','*',"status = 'A' AND profile_id > ".$this->ProfileID." ".$Where,"first_name",$Limit);
 		$AtLeastOne	= false;
 		for($i=0;$i<count($AdminRegs);$i++)
 		{
