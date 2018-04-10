@@ -18,7 +18,7 @@
 			<p style="text-align: justify;">Bienvenidos a la decana de las escuela de homeopatía de la Argentina.</p>
 			<p style="text-align: justify;">Este año cumplimos 85 años de lucha incansable en pos de la perfección del cumplimiento de los principios hahnemannianos.<br>Bienvenidos a la Homeopatía. Los estábamos esperando.</p>
 			<br />
-			<p style="text-align: right;">Dr. Adolfo Campanelli<br/>Director de la Escuela de Posgrado<br/><a href="http://www.amha.org.ar" target="_blank" ><b>A.M.H.A.</b></a></p>
+			<p style="text-align: right;">Dr. Adolfo Campanelli<br/>Director de la Escuela de Posgrado<br/></p>
 		</div>
     </div>
 </body>
