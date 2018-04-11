@@ -7,7 +7,7 @@
 <body>
 	<?php include("../../includes/inc.top.php"); ?>
 	<div id="Content" style="">
-		<div class="Center resize"><img src="../../../skin/images/body/logos/campus_logo3.png" width="200" height="189" /></div>
+		<!--<div class="Center resize"><img src="../../../skin/images/body/logos/campus_logo3.png" width="200" height="189" /></div>-->
 		<div class="DarkBlue" style="font-style:italic;font-family: 'sans-serif'!important;font-size:20px;width:60%;margin:0 auto;color:#dbe8fc!important;">
 			
 			<p style="text-align: justify;">La homeopatía es el Arte y la ciencia de curar por medio de los semejantes.</p>
