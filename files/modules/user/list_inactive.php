@@ -1,4 +1,3 @@
-
 <?php
 	include("../../includes/inc.main.php");
 	$Head->setTitle("Usuarios Administradores");
@@ -22,13 +21,13 @@
 <body>
 	<?php include("../../includes/inc.top.php"); ?>
 	<div id="Content">
-    
-    	<div class="ListWrapper">        
+
+    	<div class="ListWrapper">
             <div class="ListTop BorderRadiusTop Noto14px">Listado de Usuarios ELIMINADOS</div>
             <div class="ListOptions Center">
-                <?php 
+                <?php
                     echo insertElement('button','ButtonNew','NUEVO USUARIO','SubmitButton Center Arial14px BlackGray Bold','');
-                    echo insertElement('button','ButtonFilter','BUSCAR','SubmitButton Center Arial14px BlackGray Bold',''); 
+                    echo insertElement('button','ButtonFilter','BUSCAR','SubmitButton Center Arial14px BlackGray Bold','');
                 ?>
             </div>
             <div id="ListSearcher" class="ListSearcher Hidden Noto12px">
@@ -40,25 +39,25 @@
                 ?>
             </div>
             <div class="ListBody Noto12px" id="ListBody2">
-                
-                <?php 
-                    
+
+                <?php
+
                     $Pager->SetPageRegs(5);
                     echo $Admin->MakeListInactive($Pager->CalculateRegFrom(),$Pager->GetPageRegs());
                     $_SESSION[$Pager->GetPagerID()]   = $Pager;
                 ?>
-                
+
             </div>
             <div class="ListBot BorderRadiusBot Frutiger14px">
                 <div class="Left">
-                <?php 
+                <?php
                     echo $Pager->InsertBtnBackAjax("<");
                     echo $Pager->InsertAjaxPager();
                     echo $Pager->InsertBtnFowardAjax(">");
                 ?>
                 </div>
                 <div class="Right Center">
-                <?php 
+                <?php
                     echo $Pager->InsertRegSelect();
                 ?>
                 </div>

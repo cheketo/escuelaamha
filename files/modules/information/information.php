@@ -1,4 +1,3 @@
-
 <?php
 	include("../../includes/inc.main.php");
 	$Head->setTitle("Informaci&oacute;n");
