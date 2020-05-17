@@ -27,8 +27,8 @@
 					<tr>
 
 							<td style="text-align: right;">Dr. Lucas Yraola<br/>Director de la Escuela de Posgrado</td>
-							<td style="text-align: right;">Dr. Gustavo Martello<br/>Sub Director de la Escuela de Posgrado</td>
-							<td style="text-align: right;">Dra. Astrid Motura<br/>Secretaria de la Escuela de Posgrado</td>
+							<td style="text-align: right;">Dra. Astrid Motura<br/>Sub Directora de la Escuela de Posgrado</td>
+              <td style="text-align: right;">Dr. Adolfo Campanelli<br/>Secretario de la Escuela de Posgrado</td>
 
 					</tr>
 
